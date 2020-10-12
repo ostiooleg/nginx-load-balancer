@@ -1,0 +1,7 @@
+---
+  worker_connections: 6144
+  sendfile: "on"
+  tcp_nodelay: "on"
+  tcp_nopush: "on"
+  keepalive_timeout: 300
+...

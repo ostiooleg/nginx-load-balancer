@@ -1,0 +1,17 @@
+server {
+    listen 80 default_server;
+    server_name {{ app_server }};
+    location / {
+        root  {{ app_root }};
+        index  index.html index.htm;
+    }
+
+    error_page  500 502 503 504  /50x.html;
+    location = /50x.html {
+        root  /usr/share/nginx/html;
+    }
+
+    access_log /var/log/nginx/app-access.log;
+    error_log /var/log/nginx/app-error.log;
+
+}

@@ -1,0 +1,9 @@
+---
+  app_server: app-oleg-karagezoff.devops.rebrain.srwx.net:80
+  server_name: my-website-oleg.devops.rebrain.srwx.net
+  worker_connections: 6144
+  sendfile: "on"
+  tcp_nodelay: "on"
+  tcp_nopush: "on"
+  keepalive_timeout: 300
+...

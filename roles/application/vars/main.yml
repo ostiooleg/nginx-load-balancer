@@ -1,0 +1,4 @@
+---
+  app_server: my-website-oleg.devops.rebrain.srwx.net
+  app_root: /home/my-website-oleg.devops.rebrain.srwx.net/
+...

@@ -1,0 +1,12 @@
+- name: Copy index.html
+  copy:
+    src: index.html
+    dest: "{{ app_root }}"
+
+- name: Write nginx virtualhost conf
+  template:
+    src: app_virtualhost.conf.j2
+    dest: /etc/nginx/conf.d/app-ostiooleg.devops.rebrain.srwx.net.conf
+  notify:
+    - Reload nginx
+...
